@@ -33,6 +33,7 @@ public class MaximumBinaryTree654 {
     }
 
     public TreeNode insert(int num, TreeNode root){
+        //比当前root节点大，做root，并前root做其左子节点
         TreeNode now = new TreeNode(num);
         if (num > root.val){
             now.left = root;
@@ -42,6 +43,7 @@ public class MaximumBinaryTree654 {
         TreeNode pre = root;
         TreeNode tmp = root.right;
 
+        //迭代右节点，找到比当前num小的，最大的右节点，替换掉并使其做num的左节点。
         while (tmp != null && num < tmp.val){
             pre = tmp;
             tmp = tmp.right;
