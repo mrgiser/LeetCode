@@ -1,4 +1,4 @@
-package main.java.leetcode;
+package cn.he.pegasus.leetcode;
 
 /**
  * 描述:
