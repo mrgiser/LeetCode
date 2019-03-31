@@ -1,4 +1,4 @@
-package main.java.leetcode;
+package cn.he.pegasus.leetcode;
 
 import java.util.Stack;
 
@@ -61,15 +61,4 @@ public class Num1008 {
         return root;
     }
 
-}
-
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
